@@ -15,25 +15,33 @@
 
 #wefarm{
     text-align: center;
-    color: green;
+    color: rgb(206, 169, 21);
     font-family:'Inconsolata';
     font-weight: 600;
     font-size: 75px;
 }
 
 /* game */
-.contenir {
-    background: black;
+body{
+  margin-left: auto;
+  margin-right:auto;
+}
+.container {
+    background: rgb(255, 255, 255);
     display: inline-block;
-    border: 5px solid black;
+    border: 5px solid rgb(242, 213, 192);
+    box-shadow: rgba(180, 52, 52, 0.554);
+    border-radius: 5px ;
+    margin-top: 150px;
     margin-left: 25%;
-    margin-right: 25%;
+    margin-right:25%;
+
   }
   .grid{
     display: grid;
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(3, 150px);
-    grid-gap: 1px;
+    grid-gap: 0px;
   }
   .item {
     justify-content: center;
@@ -41,23 +49,35 @@
     display: flex;
     background: white;
   }
-  .contenir2 {
+  .item img{
+    position: absolute;
+    width: 150px;
+  }
+  .above{
+    z-index: 1;
+    position: absolute;
+
+  }
+  .container2 {
     background: black;
     display: inline-block;
     border: 5px solid black;
     margin-left: 85%;
-
     
   }
   .grid2{
     display: grid;
-    grid-template-columns: repeat(1, 50px);
-    grid-template-rows: repeat(2, 50px);
-    grid-gap: 1px;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(1, 50px);
+    grid-gap: 25%;
+    margin-left: 15%;
+    margin-right:15%;
+    padding: 10px;
   }
   .item2 {
     justify-content: center;
     align-items: center;
     display: flex;
-    background: white;
+    border: 1px solid rgb(107, 110, 110);
+    background: rgb(45, 185, 164);
   }
