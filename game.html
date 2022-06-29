@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <!-- <script src="/assets/js/main.js"></script> -->
     <title>WeFarm</title>
 </head>
 <body>
@@ -14,54 +13,57 @@
         </h3> 
         <div class="grid">
             <div class="item" id="loc1">
-                <img class="above" src="/assets/farm-imgs/yellow-flower.png">
-                <img src="/assets/farm-imgs/bg1-1.png">
+                <!-- <img class="above" src="/assets/farm-imgs/yellow-flower.png"> -->
+                <img class="soil" src="/assets/farm-imgs/bg1-1.png">
             </div>
         <div class="item" id="loc2">
             <img class="above" src="/assets/farm-imgs/stage0.png">
-            <img src="/assets/farm-imgs/bg1-2.png">
+            <img class="soil" src="/assets/farm-imgs/bg1-2.png">
         </div>
         <div class="item" id="loc3">
             <img class="above" src="/assets/farm-imgs/stage1.png">
-            <img src="/assets/farm-imgs/bg1-3.png">
+            <img class="soil" src="/assets/farm-imgs/bg1-3.png">
         </div>
         <div class="item" id="loc4">
             <img class="above" src="/assets/farm-imgs/stage2.png">
-            <img src="/assets/farm-imgs/bg2-1.png">
+            <img  class="soil" src="/assets/farm-imgs/bg2-1.png">
         </div>
         <div class="item" id="loc5">
             <img class="above" src="/assets/farm-imgs/orange-flower.png">
-            <img src="/assets/farm-imgs/bg2-2.png">
+            <img class="soil" src="/assets/farm-imgs/bg2-2.png">
         </div>
         <div class="item" id="loc6">
             <img class="above" src="/assets/farm-imgs/rare-flower.png">
-            <img src="/assets/farm-imgs/bg2-3.png">
+            <img class="soil" src="/assets/farm-imgs/bg2-3.png">
         </div>
         <div class="item" id="loc7">
             <img class="above" src="/assets/farm-imgs/stage0.png">
-            <img src="/assets/farm-imgs/bg3-1.png">
+            <img class="soil" src="/assets/farm-imgs/bg3-1.png">
         </div>
         <div class="item" id="loc8">
             <img class="above" src="/assets/farm-imgs/pink-flower.png">
-            <img src="/assets/farm-imgs/bg3-2.png">
+            <img class="soil" src="/assets/farm-imgs/bg3-2.png">
         </div>
         <div class="item" id="loc9">
             <img class="above" src="/assets/farm-imgs/stage2.png">
-            <img src="/assets/farm-imgs/bg3-3.png">
+            <img class="soil" src="/assets/farm-imgs/bg3-3.png">
         </div>
         </div>
         <div class="grid2">
-            <div class="item2" id="water">
-                <img src="/assets/farm-imgs/watering-can.png">
+            <div class="item2">
+                <img  onclick="drag('water')" id="water" src="/assets/farm-imgs/watering-can.png">
             </div>
-            <div class="item2" id="seeds">
-                <img src="/assets/farm-imgs/seed-bag.png">
+            <div class="item2" >
+                <img onclick="drag('seeds')" id="seeds" src="/assets/farm-imgs/seed-bag.png">
             </div>
-            <div class="item2" id="farming">
-                <img src="/assets/farm-imgs/farming.png">
+            <div class="item2">
+                <img onclick="drag('farming')" id="farming" src="/assets/farm-imgs/farming.png">
+
             </div>
         </div>
     </div>
-    <script src="/assets/js/main.js"></script>
+   
+    <!-- <script src="/assets/js/main.js"></script> this was causing reload of page problem-->
+    <script src="/assets/js/dragTools.js"></script>
 </body>
 </html>
